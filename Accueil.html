@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<script src="page.js"></script>
+		<title>Accueil</title>
+	</head>
+
+	<body>
+		<div class ="bandeau">
+			<h1 class="blabla_accueil" onclick="window.location.href='Accueil.html';">BlaBlaBla</h1>
+		</div>
+
+		<div class = "accueil" >
+			<h1 class="titre_acc">Bienvenue sur notre blog !</h1>
+			<h2 class="soustitre_acc">Ici, vous pouvez apprendre à nous connaitre un peu plus :)</h2>
+			<ul class="menu_acc">	
+			<li><a href="Menu_musiques.html">MUSIQUES&emsp;</a></li>
+     		<li><a href="Menu_films.html">FILMS&emsp;</a></li>
+     		<li><a href="Menu_aboutus.html">ABOUT US&emsp;</a></li>	 <br>
+			</ul>
+		</div>
+
+		<h4>Scroll pour t'inscrire !</h4>
+		<div class="fleche"></div>
+
+		<!--Formulaire-->
+		<div class ="formulaire">
+			<form name="form">
+				<label for="Prénom">Prénom *</label>
+				<input type="text" id="Prénom" placeholder="Votre prénom...">
+
+				<label for="Nom">Nom *</label>
+				<input type="text" id="Nom" placeholder="Votre nom...">
+
+				<label for="Email">Mail *</label>
+				<input type="text" id="Email" placeholder="Votre adresse-mail...">
+
+				<label for="Mfav" l>Musique favorite</label>
+				<input type="text" id="Mfav" placeholder="Votre musique favorite..." >
+
+				<label for="Ffav" l>Film favori</label>
+				<input type="text" id="Ffav" placeholder="Votre film favori..." >
+
+				<label for ="Genre">Sélectionnez une catégorie de films</label>
+				<select type="text" value="" id="Genre">
+				<option></option>
+				<option>Action</option>
+				<option>Comédie</option>
+				<option>Horreur</option>
+				<option>Romance</option>
+				</select>
+
+				<label for="commentaire">Commentaires </label><br><br>
+				<textarea cols="127" id="commentaire" rows="5" name="Commentaire"></textarea>
+			
+				<h3 class ="newsletter_titre"> Souhaitez-vous vous abonner à la newsletter ? *</h3>
+
+				<div class="checkbox-container">
+					<label>
+						<input type="checkbox" id="option1">
+						<span class="checkmark"></span>
+						Oui
+					</label>
+					<label>
+						<input type="checkbox" id="option2">
+						<span class="checkmark"></span>
+						Non
+					</label>
+				</div>
+				<input type="submit" value="Submit"  onclick="afficherMessage()">
+			</form>
+		</div>
+
+
+	</body>
+</html>
+
+<style>
+	body{
+		background-image: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("accueil.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+</style>
